@@ -274,8 +274,9 @@ Randolph Chung, B<<tausq@debian.org>>.
 
 The Solaris pkg code was written by Mark A. Hershberger B<<mah@everybody.org>>.
 
-alien has been extensively rewritten (3 times) and is now maintained by
-Joey Hess, B<<joeyh@debian.org>>.
+Joey Hess has been maintained package, re-write all alien code then retired and 
+is now maintained by Cevat Bostancioglu, B<<bostancioglucevat@gmail.com>>.
+
 
 =head1 COPYRIGHT
 

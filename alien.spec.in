@@ -1,9 +1,9 @@
 Summary: Install Debian, Slackware, and Stampede packages with rpm.
 Name: alien
-Packager: Joey Hess <joey@kitenet.net>
+Packager: Cevat Bostancioglu <bostancioglucevat@gmail.com>
 Version: @version@
 Release: 1
-Source: ftp://kitenet.net/pub/code/debian/alien_@version@.tar.gz
+Source: https://github.com/cevatbostancioglu/alien/releases/alien_@version@.tar.gz
 License: GPL
 Group: Utilities/File
 Buildroot: /tmp/alien-@version@.build

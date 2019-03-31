@@ -2,10 +2,10 @@ Source: alien
 Section: admin
 Priority: optional
 Build-Depends: debhelper (>= 9)
-Maintainer: Debian QA Group <packages@qa.debian.org>
-Standards-Version: 3.9.6
-Vcs-Git: git://git.kitenet.net/alien
-Homepage: http://kitenet.net/~joey/code/alien/
+Maintainer: Cevat Bostancioglu <bostancioglucevat@gmail.com>
+Standards-Version: 4.3.0
+Vcs-Git: git@github.com:cevatbostancioglu/alien.git
+Homepage: https://github.com/cevatbostancioglu/alien
 
 Package: alien
 Architecture: all

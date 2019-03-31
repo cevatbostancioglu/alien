@@ -1,3 +1,4 @@
+* fix debian issues: https://tracker.debian.org/pkg/alien
 * handling postinst script when converting to/from .slp packages.
 * alien needs to handle relocatable conffiles, partially relocatable
   packages, and packages that have maultiple parts that relocate

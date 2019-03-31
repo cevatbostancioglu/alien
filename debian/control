@@ -9,7 +9,7 @@ Homepage: https://github.com/cevatbostancioglu/alien
 
 Package: alien
 Architecture: all
-Depends: debhelper (>= 7), ${misc:Depends}, ${perl:Depends}, rpm (>= 2.4.4-2), dpkg-dev, make, cpio, rpm2cpio
+Depends: ${misc:Depends}, ${perl:Depends}, rpm (>= 2.4.4-2), dpkg-dev, make, cpio, rpm2cpio
 Suggests: patch, bzip2, lintian, lzma
 Description: convert and install rpm and other packages
  Alien allows you to convert LSB, Red Hat, Stampede and Slackware Packages

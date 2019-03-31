@@ -12,4 +12,4 @@ override_dh_auto_clean:
 
 # Not intended for use by anyone except the author.
 announcedir:
-	@echo ${HOME}/src/joeywiki/code/alien/news
+	@echo ${HOME}/${USER}/Downloads/alien/news

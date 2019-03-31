@@ -1,8 +1,10 @@
 alien (8.96) unstable; urgency=medium
 
-  * QA upload
+  * QA upload.
+  * debian/control:
+      - Bumped Standards-Version to 4.3.0
 
-  -- Cevat Bostancioglu <bostancioglucevat@gmail.com> 
+ -- Cevat Bostancioglu <bostancioglucevat@gmail.com>  Sat, 30 Mar 2019 18:00:04 -0300
 
 alien (8.95) unstable; urgency=medium
 

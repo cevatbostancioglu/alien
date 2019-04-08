@@ -193,6 +193,10 @@ some things to mess with their permissions and owners to the degree this does,
 so it defaults to off. This can only be used when converting to debian
 packages.
 
+=item B<--suffix=>I<suffix>
+
+Append suffix end of the converted packagename
+
 =item B<--target=>I<architecture>
 
 Force the architecture of the generated package to the given string.
@@ -335,6 +339,7 @@ Usage: alien [options] file [...]
   -i, --install             Install generated package.
   -g, --generate            Generate build tree, but do not build package.
   -c, --scripts             Include scripts in package.
+	  --suffix=<suffix>     Append to converted package name(package<suffix>.deb)
       --target=<arch>       Set architecture of the generated package.
   -v, --verbose             Display each command alien runs.
       --veryverbose         Be verbose, and also display output of run commands.
@@ -350,7 +355,7 @@ EOF
 # Start by processing the parameters.
 my (%destformats, $generate, $install, $single, $scripts, $patchfile,
     $nopatch, $tgzdescription, $tgzversion, $keepversion, $fixperms,
-    $test, $anypatch, $target);
+    $test, $anypatch, $target, $suffix);
 my $versionbump=1;
 
 # Bundling is nice anyway, and it is required or Getopt::Long will confuse
@@ -372,6 +377,7 @@ GetOptions(
 	"patch=s"        => \$patchfile,
 	"nopatch"        => \$nopatch,
 	"anypatch"       => \$anypatch,
+	"suffix=s"		 => \$suffix,
 	"target=s"       => \$target,
 	"description=s"  => \$tgzdescription,
 	"V"              => \&version,
@@ -423,7 +429,7 @@ foreach my $file (@ARGV) {
 	if (! -e $file) {
 		die "File \"$file\" not found.\n";
 	}
-
+	
 	# Figure out what kind of file this is.
 	my $package;
 
